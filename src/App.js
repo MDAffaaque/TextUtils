@@ -42,7 +42,13 @@ function App() {
         />
       </div> */}
       <Routes>
-        <Route exact path="/"></Route>
+        <Route exact path="/" element={<div className="container my-5">
+        <TextForms
+          showAlert={showAlert}
+          heading="This is a special textForm"
+          mode={mode}
+        />
+      </div>}></Route>
         <Route exact path="/home" element={<div className="container my-5">
         <TextForms
           showAlert={showAlert}
